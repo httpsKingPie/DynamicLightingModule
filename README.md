@@ -34,6 +34,13 @@ That is just the basic foundation of the Module, but there are *tons* of other c
 ## Tween Based Changes
 It's 2020, tweens are awesome, they look great, this Module absolutely uses tweens to create gradual, smooth, and seamless animations.  'Nuff said.
 
+## Turn on/off Lights (with randomization and multi-instance light capability)
+This is one of my favorite features.  I always really like seeing a city come alive when night falls.  Lights come on and it just looks spectacular.  This Module enables just that!  Just name all the lights that you want to be treated the same thing, and you're good to go!  There are two ways this works: by modifying light instances (PointLight, SpotLight, SurfaceLight) or part instances (abuse the neon material to create the illusion of light).  Randomization is also supported.  An example of why this is necessary is that when you go down a neighborhood road, every house does not have every light turned on.  Some are on, some are off.  This Module enables randomization so that you can determine the percentage chance a instance will have of "turning on" (regardless of whether it is a part of light instance).  
+
+Now, one key problem exists in this? **What if I have a multi-instance light - won't that create an error with regards to randomization**  Yes!  If you're not following what this error is, imagine a lantern model.  The lantern model has a bunch of wooden structure parts, a glass part, and a PointLight with the glass part.  I can set the PointLight to have a 50% chance of turning on, or I could set the glass part to have a 50% chance of turning on (again, abusing that neon effect and turning it maybe a yellow color).  However, if I set them both to turn on, there's only a 25% of them both turning on at the same time, and more than likely only one of them will turn on.  
+
+The solution to that is a multi-instance light handler.  In the same way way as a regular light, specify the properties that you want these multi-instances to have and then determine their relation to a singular reference part.  In this case, I might make the glass part my reference part, define the relation of the PointLight to the glass part as a child, specify my randomization chances/lighting properties, and done!  Easy as that!
+
 ## Smart (really smart???) set up
 I tried to make this Module as intuitive as possible in my quest to make it both strong, bug resistant (if you find any let me know), and intuitive.  Here are some cool smart features in the Module:
 
@@ -58,3 +65,6 @@ This Module is designed to be compatible with weather scripts!  Similarly to Lig
 module.TweenWeather(WeatherNameHere)
 ``` 
 which will tween your current lighting settings to those of the weather.  This is useful for creating dark storms, gray/white snow storms, etc.  Currently the settings that can be adjusted in weather settings are FogEnd, FogColor, Size of BlurEffects, Intesity of SunRays, Brightness, Ambient, OutdoorAmbient, WaterReflectance, WaterWaveSize, and WaterWaveSpeed.  Just like Lighting Settings, this list can definitely be expanded - I just thought these were the most relevant to start with.
+
+## Coroutine Compatability
+Not super surprising, but always nice.  This can be run as a nice coroutine if necessary or desired.  
