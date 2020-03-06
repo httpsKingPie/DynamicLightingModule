@@ -9,6 +9,8 @@ Table of Contents:
 - [Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
 
   - [Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
+  
+  - [Turn On/Off Lights with Randomization and Multi-Instance Light Capability](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#turn-onoff-lights-with-randomization-and-multi-instance-light-capability)
 
   - [Smart Set-up](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#smart-really-smart-set-up)
 
@@ -68,3 +70,63 @@ which will tween your current lighting settings to those of the weather.  This i
 
 ## Coroutine Compatability
 Not super surprising, but always nice.  This can be run as a nice coroutine if necessary or desired.  
+
+## Ease of Use/Function Mini-Library
+This Module should be very easy to use (although I'm certain that it sounds a lot worse than it really is).  I'll make sure to provide an example place as well to show what this looks like in action.  The module can all be run in one line (instructions on how to do this are at the very top of the Module).  
+
+Or, if you want to be adventurous, use all the component functions freely and readily!  The Module comes with the following functions:
+
+**Core Function**
+`DynamicLightingSystem`
+This can be the only function you ever need to run.  It will set up and run the entire system.  Uses an optional (WaitTime) argument to specify how often the Module should check for Lighting Periods.  By default set to 1.
+
+**Get Functions**
+`GetLightingSettings`
+Gets the LightingSettings table that holds all the settings for the Lighting Periods.
+
+`GetWeatherSettings`
+Gets the WeatherSettings table that holds all the settings for each Weather type.
+
+`GetLightingPeriod`
+Gets the index name of the current Lighting Period that the ClockTime is within (ex: will return "Day" or "Twilight").
+
+`CheckForPeriodChange`
+Gets the index name of the current Lighting Period.  The boundaries for this are the tween adjusted start and end times.  
+
+**Set Functions**
+`SetLighting`
+Sets the Lighting properties to the name of the Lighting Period.
+
+`SetWeather` 
+Sets the Lighting, Terrain, Blur, and SunRays properties to the name of the Weather type provided as an argument.
+
+**Handling Functions**
+`HandleLightsLightingPeriod`
+Handles decisions of whether lights need to be turned on or off based on Lighting Period.  Arguments are the Lighting Period to be evaluated (recommend using `GetLightingPeriod`) and Type (either "Set" or "Tween" which will call `SetLights` or `TweenLights`, respectively).
+
+`HandleLightsWeather`
+Handles decisions of whether lights need to be turned on or off based on weather.  Arguments are the weather type to be evaluated and Type (either "Set" or "Tween" which will call `SetLights` or `TweenLights`, respectively).
+
+**Tween Functions**
+`TweenLightingSettings`
+Tweens Lighting settings/properties to the Lighting Period name provided as an argument.
+
+`TweenWeather`
+Tweens the Lighting, Terrain, Blur, and SunRays properties to the naem of the designated weather type provided as an argument.
+
+**Advanced Functions**
+`Set Lights`
+Immediately sets the lights to an on/off status based on a boolean argument.
+
+`TweenLights`
+Tweens the lights to an on/off status based on a boolean argument.
+
+**Mechanical Functions**
+`Gather Instance Table`
+Creates and returns a table of instances within Workspace that share the name of the string argument.
+
+`LightRandomIllumination`
+Handles randomization and returns true or false based on an argument of (%ChanceOfTrue * 100)
+
+`AdjustedStart`
+Creates the adjusted start ranges.  Has an optional argument of WaitTime which will determine how long the process takes to occur.  WaitTime will default to 10 if no argument is provided.
