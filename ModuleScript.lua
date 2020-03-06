@@ -311,11 +311,11 @@ function module.DynamicLightingSystem(WaitTime) --// This can be the sole thing 
 end
 
 --// Get Functions
-function module.GetLightingSettings(LightingSettings) --// Gets the LightingSettings table
+function module.GetLightingSettings() --// Gets the LightingSettings table
 	return LightingSettings
 end
 
-function module.GetWeatherSettings(WeatherSettings) --// Gets the WeatherSettings table
+function module.GetWeatherSettings() --// Gets the WeatherSettings table
 	return WeatherSettings
 end
 
