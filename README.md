@@ -7,7 +7,7 @@ Table of Contents:
 
 [How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
 
-{Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
+[Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
 
 # How it Works
 Fundamentally, the Module works by allow you, the developer, to specify different "Lighting Periods" within the ModuleScript.  Lighting Periods are simply ranges of time that have specific lighting settings in them.  
