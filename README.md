@@ -134,7 +134,7 @@ Tweens the Lighting, Terrain, Blur, and SunRays properties to the naem of the de
 
 **Advanced Functions**
 
-`Set Lights`
+`SetLights`
 
 Immediately sets the lights to an on/off status based on a boolean argument.
 
