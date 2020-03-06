@@ -19,6 +19,8 @@ Table of Contents:
     - [Compensating for Midnight/Multi-Day Time Periods](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#compensating-for-midnightmulti-day-time-periods)
     - [No Further Variable Specifications](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#no-further-variable-specifications)
   - [Weather Integration](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#weather-integration)
+  - [Coroutine Compatability](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#coroutine-compatability)
+  - [Ease of Use/Function Mini-Library](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#ease-of-usefunction-mini-library)
 
 # How it Works
 Fundamentally, the Module works by allow you, the developer, to specify different "Lighting Periods" within the ModuleScript.  Lighting Periods are simply ranges of time that have specific lighting settings in them.  
