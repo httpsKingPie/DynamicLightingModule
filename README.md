@@ -8,7 +8,7 @@ Table of Contents:
 - [How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
 - [Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
 
-  -- [Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
+     -- [Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
 
   -- [Smart Set-up](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#smart-really-smart-set-up)
 
