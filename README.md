@@ -7,7 +7,7 @@ Table of Contents:
 
 [How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
 
-Cool Features
+{Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
 
 # How it Works
 Fundamentally, the Module works by allow you, the developer, to specify different "Lighting Periods" within the ModuleScript.  Lighting Periods are simply ranges of time that have specific lighting settings in them.  
@@ -19,6 +19,6 @@ A very basic example of where this would be useful would be making the Ambient a
 
 Within your Lighting Periods you can specify a lot of settings.  Currently the lighting settings that you can adjust are: Ambient, OutdoorAmbient, and ShadowSoftness.  The list can definitely be expanded, I just felt that those were the most relevant to start with.  
 
-That is just the basic foundation of the Module, but there are *tons* of other cool features!  Check out the Cool Features section to see more!
+That is just the basic foundation of the Module, but there are *tons* of other cool features!  Check out the [Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features) section to see more!
 
 # Cool Features
