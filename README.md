@@ -9,9 +9,11 @@ Table of Contents:
 
 [-Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
 
---[Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
---[Smart Set-up](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#smart-really-smart-set-up)
----[Auto-Syncronization with Day/Night Scripts](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#auto-syncronization-with-daynight-scripts)
+[--Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
+
+[--Smart Set-up](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#smart-really-smart-set-up)
+
+[---Auto-Syncronization with Day/Night Scripts](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#auto-syncronization-with-daynight-scripts)
 ---[Auto-calculated Tween Starts](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#auto-calculated-tween-starts)
 ---[Compensating for Midnight/Multi-Day Time Periods](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#compensating-for-midnightmulti-day-time-periods)
 ---[No Further Variable Specifications](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#no-further-variable-specifications)
