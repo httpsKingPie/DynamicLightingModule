@@ -4,7 +4,7 @@ Description: This is a powerful ModuleScript that enables developers greater fre
 To view the script click [here!](ModuleScript.lua)
 
 Table of Contents:
-How it Works
+[How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
 Cool Features
 
 # How it Works
