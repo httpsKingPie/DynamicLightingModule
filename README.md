@@ -5,9 +5,16 @@ To view the script click [here!](ModuleScript.lua)
 
 Table of Contents:
 
--[How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
+- [How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
 
--[Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
+- [Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
+-- [Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
+-- [Smart Set-up](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#smart-really-smart-set-up)
+--- [Auto-Syncronization with Day/Night Scripts](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#auto-syncronization-with-daynight-scripts)
+--- [Auto-calculated Tween Starts](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#auto-calculated-tween-starts)
+--- [Compensating for Midnight/Multi-Day Time Periods](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#compensating-for-midnightmulti-day-time-periods)
+--- [No Further Variable Specifications](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#no-further-variable-specifications)
+-- [Weather Integration](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#weather-integration)
 
 # How it Works
 Fundamentally, the Module works by allow you, the developer, to specify different "Lighting Periods" within the ModuleScript.  Lighting Periods are simply ranges of time that have specific lighting settings in them.  
@@ -22,7 +29,7 @@ Within your Lighting Periods you can specify a lot of settings.  Currently the l
 That is just the basic foundation of the Module, but there are *tons* of other cool features!  Check out the [Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features) section to see more!
 
 # Cool Features
-## Tween based changes
+## Tween Based Changes
 It's 2020, tweens are awesome, they look great, this Module absolutely uses tweens to create gradual, smooth, and seamless animations.  'Nuff said.
 
 ## Smart (really smart???) set up
