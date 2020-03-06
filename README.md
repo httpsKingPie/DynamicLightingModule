@@ -27,12 +27,21 @@ It's 2020, tweens are awesome, they look great, this Module absolutely uses twee
 
 **Smart (really smart???) set up**
 I tried to make this Module as intuitive as possible in my quest to make it both strong, bug resistant (if you find any let me know), and intuitive.  Here are some cool smart features in the Module:
+
 *Auto-syncronization with day/night scripts*
 You do not need a certain day/night script for this to work properly (although you obviously do need one of some kind since time has to pass to hit each Lighting Period, right?)  The script will automatically detect the rate at which time is passing and make adjustments accordingly?  What kind of adjustments?  Read on, dear developer!
 
 *Auto-calculated tween starts*
 So early on I realized something key, which was that if tweens start at the beginning of Lighting Periods, there is going to a gap between when the lighting period begins and when the settings are actually in their final positions as determined in each Lighting Period.  Here's an example of what I mean if you're having trouble following: 
 ![Example of issue](https://i.gyazo.com/265de5b46b7d54e2ba45542d4032e12a.png)
+*The black lines are the ranges of each lighting period and when we want those settings to be applied.  The red lines are approximately where those settings are going to be applied if the tween starts at the beginning of the lighting period.  This can result in Lighting Periods behaving as the developer does not intend*
+So what's the solution to this?  ~~Make the developer eyeball it, trial and error, and take their best guess at times to make the lighting period line up with what they want~~ The solution is to use the auto-syncronization of day/night scripts, calculate the rate at which time passes, and adjust the ranges of lighting periods and create separate ranges so that your lighting period can be fully set up when you want it.  In-game example would be specifying my twilight period at 1830-1945.  If the tween settings are set up so that changes take 20 seconds to tween all the lighting settings and time passes in my game at a rate of approximately (.05 hours per second, then I would need to start my tween at 1730 in-game time.  The Module takes care of all of that for you.  
+
+*Compensating for midnight/multi-day time periods*
+The Module is set up to understand when Lighting Periods cross over days.  There will not be an error if you specify Lighting Periods that begin at 2100 and end at 0500 or LightingPeriods that begin at 1200 and end at 1700.  The Module is designed to take those into account, so have no fear.
+
+*No further variable specifications*
+Just set up your lighting periods and weather settings.  There are zero other variables you need to define or instances that you have to manually calibrate.  An example of this is the BlurEffect.  You don't have to go through the tedious process of configuring instances within the Module script to reference your BlurEffect.  The module will find it automatically and if it isn't there, it will create one.  Easier for everyone, but mostly you : D)
 
 **Weather Integration**
 This Module is designed to be compatible with weather scripts!  Similarly to Lighting Periods, you can specify different settings for various weather conditions.  Once you've done that, just call different weather conditions by running the function 
