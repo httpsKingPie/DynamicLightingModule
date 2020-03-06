@@ -5,11 +5,7 @@ To view the script click [here!](ModuleScript.lua)
 
 Table of Contents:
 
-[my path](path/to/doc.md)
-- [my path](path/to/doc.md)
-
 - [How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
-
 - [Cool Features](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#cool-features)
 
 -- [Tween Based Changes](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#tween-based-changes)
