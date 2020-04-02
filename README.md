@@ -3,6 +3,8 @@ Description: This is a powerful ModuleScript that enables developers greater fre
 
 To view the script click [here!](ModuleScript.lua)
 
+For example places that show the script in action and go through the various features click [here!](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/Example%20Places)
+
 Table of Contents:
 
 - [How it Works](https://github.com/httpsKingPie/DynamicLightingModule/blob/master/README.md#how-it-works)
