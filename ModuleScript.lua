@@ -90,6 +90,20 @@ local WeatherSettings = {
 		WaterWaveSpeed = 9.77,
 		LightsOn = false,
 	},
+	["NameThisWhateverYouWant"] = {
+		BlurSize = 0,
+		SunRaysIntensity = 0,
+		FogColor = Color3.fromRGB(0,0,0),
+		FogEnd = 10000,
+		Brightness = 0,
+		Ambient = Color3.fromRGB(0, 0, 0),
+		OutdoorAmbient = Color3.fromRGB(0,0,0),
+		ShadowSoftness = 0, 
+		WaterReflectance = 0,
+		WaterWaveSize = 0,
+		WaterWaveSpeed = 0,
+		LightsOn = true,
+	},
 }
 
 local ChangingLights = {	
