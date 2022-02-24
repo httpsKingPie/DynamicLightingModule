@@ -1,3 +1,5 @@
+# Deprectated, go check out [Immersive Environments - the newer, better, and updated sequel!](https://github.com/httpsKingPie/Immersive-Environments)
+
 # DynamicLightingModule
 Description: This is a powerful ModuleScript that enables developers greater freedom at customizing and designing games with advanced lighting
 
